@@ -4,5 +4,15 @@
     "underscore": "1.4.x",
     "typogr": "0.5.x"
   },
-  "private": "true"
+  "private": "true",
+  "engines": {
+    "node": "6.10.0",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
+    "heroku-postbuild": "echo This runs afterwards."
+  }
+
 }

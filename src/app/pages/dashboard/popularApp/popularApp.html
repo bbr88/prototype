@@ -1,18 +1,22 @@
 <div class="popular-app-img-container">
-  <div class="popular-app-img">
-    <img ng-src="{{::( 'app/my-app-logo.png' | appImage )}}"/>
-    <span class="logo-text">Super&nbspApp</span>
-  </div>
+    <div class="popular-app-img">
+        <img ng-style="{ width : 160 }" ng-src="{{::( 'app/iphone4s.png' | appImage )}}"/>
+    </div>
 </div>
 <div class="popular-app-cost row">
-  <div class="col-xs-9">
-    Most Popular App
-  </div>
-  <div class="col-xs-3 text-right">
-    175$
-  </div>
+    <div class=".col-md-4">
+        Apple iPhone 4S 16GB
+    </div>
+    <div class=".col-xs-6 .col-sm-3">
+        <div ba-panel-class="with-scroll">
+            <div ng-include="'app/pages/form/inputs/widgets/tagsInput/tagsInput.html'"></div>
+        </div>
+    </div>
+    <!--<div class="col-xs-3 text-right">
+    qwe
+    </div>-->
 </div>
-<div class="popular-app-info row">
+<!--<div class="popular-app-info row">
   <div class="col-xs-4 text-left">
     <div class="info-label">Total Visits</div>
     <div>47,512</div>
@@ -25,4 +29,4 @@
     <div class="info-label">Sales</div>
     <div>2,928</div>
   </div>
-</div>
+</div>-->

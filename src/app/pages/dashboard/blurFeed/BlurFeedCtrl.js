@@ -10,6 +10,8 @@
 
   /** @ngInject */
   function BlurFeedCtrl($scope) {
+    var feeds = [];
+
     $scope.feed = [
       {
         type: 'text-message',
@@ -121,6 +123,28 @@
         expanded: false,
       }
     ];
+
+    $scope.addComment = function () {
+        var content = $scope.commentary;
+        var now = new Date().toTimeString();
+        var message = {
+            type: 'text-message',
+            author: 'Igor',
+            surname: 'Bisarnov',
+            header: 'Новый отзыв',
+            text: content,
+            time: now,
+            ago: 'Только что',
+            expanded: false
+        };
+        feeds = $scope.feed;
+        feeds.push(message);
+        $scope.commentary = null
+    };
+
+    $scope.refreshFeed = function() {
+        $scope.feed = angular.copy(feeds);
+    };
 
     $scope.expandMessage = function(message){
       message.expanded = !message.expanded;

@@ -1,6 +1,10 @@
-
+<div class="form-group">
+  <textarea placeholder="Что Вы думаете об этом товаре?" ng-model="commentary" class="form-control" id="commentId"></textarea>
+  <!--<button ng-click="addComment()">Reload Data</button>-->
+  <button ng-click="addComment()" progress-button="progressFunction()" pb-direction="vertical" class="btn btn-primary">Добавить отзыв</button>
+</div>
 <div class="feed-messages-container" track-width="smallContainerWidth" min-width="360">
-  <div class="feed-message" ng-repeat="message in feed" ng-click="expandMessage(message)">
+  <div class="feed-message" ng-repeat="message in feed track by $index" ng-click="expandMessage(message)">
     <div class="message-icon" ng-if="message.type == 'text-message'">
       <img class="photo-icon" ng-src="{{::( message.author | profilePicture )}}">
     </div>
