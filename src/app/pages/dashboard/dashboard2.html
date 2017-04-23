@@ -1,0 +1,54 @@
+<dashboard-pie-chart2></dashboard-pie-chart2>
+
+<div class="row" ng-init="message={
+type: 'text-message',
+author: 'Igor',
+surname: 'Bisarnov',
+header: 'Новый отзыв',
+text: 'test comment',
+time: '23.04.2017',
+ago: 'Только что',
+expanded: false
+}">
+</div>
+
+<div class="row">
+  <div class="col-xlg-9 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="row">
+      <div class="col-xlg-4 col-lg-12 col-md-12 col-sm-5 col-xs-12"
+           ba-panel
+           ba-panel-class="popular-app medium-panel">
+        <popular-app2></popular-app2>
+      </div>
+      <!--<div class="form-group">
+        <label for="commentId">Добавить отзыв</label>
+        <textarea placeholder="Что Вы думаете об этом товаре?" class="form-control" id="commentId"></textarea>
+        <button ng-click="addComment(message)">Reload Data</button>
+      </div>-->
+    </div>
+  </div>
+  <div class="col-xlg-3 col-lg-6 col-md-6 col-sm-12 col-xs-12"
+       ba-panel
+       ba-panel-title="Отзывы"
+       ba-panel-class="large-panel with-scroll feed-panel">
+    <blur-feed></blur-feed>
+  </div>
+</div>
+
+<script>
+  /*$scope.addComment = function() {
+    var comment = angular.element('#commentId')[0].val();
+    var message = {
+        type: 'text-message',
+        author: 'Igor',
+        surname: 'Bisarnov',
+        header: 'Новый отзыв',
+        text: comment,
+        time: '23.04.2017',
+        ago: 'Только что',
+        expanded: false
+    };
+
+    alert('test');
+  }*/
+</script>

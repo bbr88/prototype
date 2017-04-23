@@ -19,7 +19,16 @@
             icon: 'ion-android-home',
             order: 0,
           },
-        });
+        })
+        .state('dashboard2', {
+            url: '/dashboard2',
+            templateUrl: 'app/pages/dashboard/dashboard2.html',
+            title: 'Описание продукта',
+            sidebarMeta: {
+                icon: 'ion-android-home',
+                order: 0,
+            },
+        })
   }
 
 })();
