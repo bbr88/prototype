@@ -16,7 +16,7 @@
     "npm": "3.10.10"
   },
   "scripts": {
-    "build": "gulp",
+    "postinstall": "gulp default",
 //    "start": "gulp serve",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "echo This runs afterwards."
