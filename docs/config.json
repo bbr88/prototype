@@ -2,7 +2,7 @@
   "baseUrl": "/blur-admin/",
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
+    "name": "some name",
     "owner": "Someone",
     "description": "Ramblings of an immor(t)al demigod"
   },
