@@ -2,17 +2,25 @@
   "dependencies": {
     "moment": "2.3.x",
     "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "typogr": "0.5.x",
+    "bower": "1.8.0",
+    "gulp": "3.9.1"
+  },
+  "devDependencies": {
+    "bower": "1.8.0"
   },
   "private": "true",
   "engines": {
     "node": "6.10.0",
     "npm": "3.10.10"
   },
+  /*"scripts": {
+    "preinstall": "npm install",
+    "postinstall": "./node_modules/bower/bin/bower install"
+  }*/
   "scripts": {
-    "start": "gulp serve",
+//    "start": "gulp serve",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "echo This runs afterwards."
   }
-
 }
