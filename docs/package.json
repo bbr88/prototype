@@ -14,12 +14,8 @@
     "node": "6.10.0",
     "npm": "3.10.10"
   },
-  /*"scripts": {
-    "preinstall": "npm install",
-    "postinstall": "./node_modules/bower/bin/bower install"
-  }*/
   "scripts": {
-    "start": "gulp serve",
+    "start": "node server.js",
     "heroku-prebuild": "echo This runs before Heroku installs your dependencies.",
     "heroku-postbuild": "echo This runs afterwards."
   }
