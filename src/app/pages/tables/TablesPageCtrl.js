@@ -736,7 +736,7 @@
                 status: null,
                 group: null
             };
-            $scope.users.push($scope.inserted);
+            $scope.accounts.push($scope.inserted);
         };
 
         $scope.getAllCategories = function () {
